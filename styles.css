@@ -1,0 +1,368 @@
+body{
+	/* Ruby Lakes */
+	font: 15px/1.5 Arial, Helvetica, sans-serif;
+
+	padding:0;
+	margin:0;
+	background-color: #603113;
+	background-image: url("pics/woodbg3.png");
+}
+
+
+/*All global things*/
+.container{
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+	text-align: center;
+}
+
+/*Everything between the header and footer*/
+.pagecontent{
+	position: relative;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-top: 120px;
+	margin-bottom: 0px;
+}
+
+/* Items that maintain the aspect ratio */
+.sizebox{
+	margin:auto;
+	width:76%;
+	display: inline-block;
+	position: relative;
+}
+
+.sizebox:after{
+	margin:auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 46.0%;
+	padding-bottom: 0px;
+	display:block;
+	content: '';
+}
+
+/* Showcase */
+#showcase{
+	background: url("pics/k13.png");
+	background-size: 100% 100%;
+	position: absolute;
+	left: 15.70%;
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	text-align:center;
+	color:white;
+}
+
+#showcase h1{
+	font-size:85px;
+	margin-top: 0px;
+	padding-top: 30px;
+}
+
+#showcase p{
+	font-size:24px;
+	font-weight: bold;
+}
+
+.scalePic{
+	margin:auto;
+	width:50%;
+	display: inline-block;
+	position: relative;
+}
+
+#logo2{
+	width: 40%;
+	position: relative;
+	overflow:hidden;
+	top: -130px;
+}
+
+
+.button1{
+	height:36px;
+	background: #edb42e;
+	border:0;
+	padding-left: 20px;
+	padding-right: 20px;
+	color:white;
+	font-weight: bold;
+}
+
+.button1:hover{
+	background:#f15f5f;
+	font-weight: bold;
+}
+
+.dark{
+	padding: 15px;
+	background: #800040;
+	color:white;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+ul{
+	margin:0;
+	padding:0;
+}
+
+/* Header */
+header{
+	margin:auto;
+	width: 90%;
+	position: relative;
+
+	display: inline-block;
+
+	top: -50px;
+	background: #b72929;
+	color: white;
+	padding-top: 0px;
+	margin-top: 0px;
+	height:90px; 	/* Set height of header. This + padding top/bottom = total height*/
+	box-shadow: 0px 2px 35px black;
+
+}
+
+header:after{
+	margin:auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 25.0%;
+	padding-bottom: 0px;
+	display:block;
+	content: '';
+}
+
+header nav{
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	position: absolute;
+	padding: 0 5% 0 5%;
+	top: -30px;
+	/*position: relative;
+	top:-30px;
+	left: -20px;*/
+	background: yellow;
+}
+
+header ul{
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	position: relative;
+	background: blue;
+}
+
+header li{
+	float:left;
+	display:inline-block;
+	padding: 0 3% 0 3%; /*top right bottom left*/
+	background: brown;
+}
+
+header a{
+	color: white;
+	text-decoration: none; /*Remove the underline in the link*/
+	text-transform: uppercase;
+	font-size:90%x;
+	margin-top: 35px;
+	position: relative;
+	top: 65px;
+	background: red;
+}
+
+header #mainLogo{
+	margin-left: 10px;
+	margin-right:10px;
+	height:150px;
+	border:1px solid #383838;
+	box-shadow: 0px 0px 30px black;
+}
+
+header .highlight, header .current a{
+	color:#edb42e;
+}
+
+header a:hover{
+	color:blue;
+}
+
+
+
+
+/* The Main Div for the info to share */
+#divider{
+	position: absolute;
+	left:15.70%;
+	height: 100%;
+	width: 100%;
+	background: url("pics/seamless_paper_texture.png");
+	background-size: 100% 100%;
+	margin: auto;
+	text-align:center;
+	color:black;
+
+	/*margin:auto;
+	height: 530px;
+	width: 76%;*/
+}
+
+
+
+/* Newsletter */
+#newsletter{
+	padding:15px;
+	color: white;
+	background-color: #530932;
+}
+
+#newsletter h1{
+	float: left;
+}
+
+#newsletter form{
+	float:right;
+	margin-top:15px;
+}
+
+#newsletter input[type= "email"]{
+	padding: 4px;
+	height:25px;
+	width:250px;
+}
+
+
+/* The standard divs*/
+#standard{
+	background-image: url("pics/seamless_paper_texture.png"); 
+}
+
+
+/* Boxes */
+#boxes{
+	background-color: #e9dec9;
+}
+
+#boxes .box{
+	float:left;
+	text-align: center;
+	width:30%;
+	padding:10px;
+}
+
+#boxes .box img{
+	width: 250px;
+	height: 280px;
+	border-radius: 20px;
+}
+
+
+
+
+/* Sidebar */
+aside#sidebar{
+	float:right;
+	width:30%;
+	margin-top:10px;
+}
+
+
+/* Main-col */
+article#main-col{
+	float:left;
+	width:65%;
+}
+
+
+div#main-col{
+	margin:auto;
+	width: 70%;
+	background:green;
+	padding: 5px;
+	border-radius: 20px;
+	margin-bottom: 20px;
+}
+
+
+
+/* Menu Items */
+ul#menu-col li{
+	list-style: none;
+	padding: 20px;
+	border:navy;
+	margin-bottom:5px;
+	background:#decbba;
+	border-radius: 20px;
+}
+
+
+
+/* Footer */
+footer{
+	width: 70%;
+	bottom:0px;
+	padding:0px;
+	margin: auto;
+	color:white;
+	background-color: #b72929;
+	text-align: center;
+}
+
+
+
+/* Media Queries */
+@media(max-width: 1200px){
+	header nav{
+		background-color: orange;
+		padding: 0 2% 0 0;
+		text-align: center;
+	}
+
+	header li{
+		position: relative;;
+		padding: 0 0 0 3px;
+		text-align: center;
+	}
+}
+
+@media(max-width: 768px){
+	header nav{
+		background-color: green;
+	}
+}
+
+/*@media(max-width: 768px){
+	header #branding, header nav, header nav li,
+	#newsletter h1, #newsletter form, #boxes .box,
+	article#main-col, aside#sidebar{
+		float:none;
+		text-align: center;
+		width: 100%;
+	}
+
+	header{
+		padding-bottom: 20px;
+	}
+
+	#showcase h1{
+		margin-top: 40px;
+	}
+
+	#newsletter button{
+		display:block;
+		width:100%;
+	}
+
+	#newsletter form input[type="email"]{
+		width:100%;
+		margin-bottom: 5px;
+	}*/
+}
