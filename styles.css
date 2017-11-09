@@ -26,7 +26,13 @@ body{
 	margin-bottom: 0px;
 }
 
-/* Items that maintain the aspect ratio */
+
+
+
+
+
+/********************************* Showcase **********************************/
+/* Sizebox maintains the aspect ratio */
 .sizebox{
 	margin:auto;
 	width:76%;
@@ -44,7 +50,6 @@ body{
 	content: '';
 }
 
-/* Showcase */
 #showcase{
 	background: url("pics/k13.png");
 	background-size: 100% 100%;
@@ -68,20 +73,12 @@ body{
 	font-weight: bold;
 }
 
-.scalePic{
-	margin:auto;
-	width:50%;
-	display: inline-block;
-	position: relative;
-}
-
 #logo2{
-	width: 40%;
+	width: 35%;
 	position: relative;
 	overflow:hidden;
-	top: -130px;
+	top: -100px;
 }
-
 
 .button1{
 	height:36px;
@@ -98,28 +95,27 @@ body{
 	font-weight: bold;
 }
 
-.dark{
+/*.dark{
 	padding: 15px;
 	background: #800040;
 	color:white;
 	margin-top: 10px;
 	margin-bottom: 10px;
-}
+}*/
 
 
-ul{
-	margin:0;
-	padding:0;
-}
 
-/* Header */
+
+
+
+
+
+
+/*************************************** Header *****************************************/
 header{
 	margin:auto;
 	width: 90%;
 	position: relative;
-
-	display: inline-block;
-
 	top: -50px;
 	background: #b72929;
 	color: white;
@@ -127,62 +123,47 @@ header{
 	margin-top: 0px;
 	height:90px; 	/* Set height of header. This + padding top/bottom = total height*/
 	box-shadow: 0px 2px 35px black;
-
 }
 
-header:after{
-	margin:auto;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-top: 25.0%;
-	padding-bottom: 0px;
-	display:block;
-	content: '';
-}
 
 header nav{
 	height: 100%;
 	width: 100%;
 	margin: auto;
 	position: absolute;
-	padding: 0 5% 0 5%;
+	padding: 0 5% 0 5%; /*top right bottom left*/
 	top: -30px;
-	/*position: relative;
-	top:-30px;
-	left: -20px;*/
-	background: yellow;
 }
 
-header ul{
-	height: 100%;
+
+.histerlister{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.histerlister div{
 	width: 100%;
-	margin: auto;
+	height: 125px;
+	display: inline-block;
+	/*background: green;*/
 	position: relative;
-	background: blue;
-}
-
-header li{
-	float:left;
-	display:inline-block;
-	padding: 0 3% 0 3%; /*top right bottom left*/
-	background: brown;
+	left: -50px;
 }
 
 header a{
 	color: white;
 	text-decoration: none; /*Remove the underline in the link*/
 	text-transform: uppercase;
-	font-size:90%x;
-	margin-top: 35px;
+	font-size: 16px;
 	position: relative;
-	top: 65px;
-	background: red;
+	top: 70px;
 }
 
 header #mainLogo{
 	margin-left: 10px;
 	margin-right:10px;
-	height:150px;
+	height:140px;
 	border:1px solid #383838;
 	box-shadow: 0px 0px 30px black;
 }
@@ -192,10 +173,9 @@ header .highlight, header .current a{
 }
 
 header a:hover{
-	color:blue;
+	color:#ffc300;
+	color:#2dd2c5;
 }
-
-
 
 
 /* The Main Div for the info to share */
@@ -209,15 +189,24 @@ header a:hover{
 	margin: auto;
 	text-align:center;
 	color:black;
-
-	/*margin:auto;
-	height: 530px;
-	width: 76%;*/
 }
 
 
 
-/* Newsletter */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************ Newsletter ***************************************/
 #newsletter{
 	padding:15px;
 	color: white;
@@ -266,45 +255,6 @@ header a:hover{
 
 
 
-
-/* Sidebar */
-aside#sidebar{
-	float:right;
-	width:30%;
-	margin-top:10px;
-}
-
-
-/* Main-col */
-article#main-col{
-	float:left;
-	width:65%;
-}
-
-
-div#main-col{
-	margin:auto;
-	width: 70%;
-	background:green;
-	padding: 5px;
-	border-radius: 20px;
-	margin-bottom: 20px;
-}
-
-
-
-/* Menu Items */
-ul#menu-col li{
-	list-style: none;
-	padding: 20px;
-	border:navy;
-	margin-bottom:5px;
-	background:#decbba;
-	border-radius: 20px;
-}
-
-
-
 /* Footer */
 footer{
 	width: 70%;
@@ -318,12 +268,28 @@ footer{
 
 
 
-/* Media Queries */
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************ Media Queries *************************************/
 @media(max-width: 1200px){
 	header nav{
-		background-color: orange;
+		/*background-color: orange;*/
 		padding: 0 2% 0 0;
 		text-align: center;
+	}
+
+	.histerlister div{
+		left:0px;
 	}
 
 	header li{
