@@ -1,29 +1,21 @@
 body{
 	/* Ruby Lakes */
 	font: 15px/1.5 Arial, Helvetica, sans-serif;
-
-	padding:0;
-	margin:0;
-	background-color: #603113;
+	padding:0; margin:0; background-color: #603113;
 	background-image: url("pics/woodbg3.png");
 }
 
-
 /*All global things*/
 .container{
-	width:80%;
-	margin:auto;
-	overflow:hidden;
-	text-align: center;
+	width:80%;  margin:auto;
+	overflow:hidden;  text-align: center;
 }
 
 /*Everything between the header and footer*/
 .pagecontent{
-	position: relative;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	margin-top: 120px;
-	margin-bottom: 0px;
+	position: relative; padding-top: 0px; padding-bottom: 0px;
+	margin-top: 120px; margin-bottom: 0px;
+	/*background-color: green;*/
 }
 
 
@@ -95,14 +87,6 @@ body{
 	font-weight: bold;
 }
 
-/*.dark{
-	padding: 15px;
-	background: #800040;
-	color:white;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}*/
-
 
 
 
@@ -125,7 +109,6 @@ header{
 	box-shadow: 0px 2px 35px black;
 }
 
-
 header nav{
 	height: 100%;
 	width: 100%;
@@ -135,29 +118,24 @@ header nav{
 	top: -30px;
 }
 
-
 .histerlister{
+	/*navigation in the header*/
 	display: flex;
 	justify-content: space-between;
 }
 
-
 .histerlister div{
-	width: 100%;
-	height: 125px;
-	display: inline-block;
+	width: 100%; height: 125px; display: inline-block;
 	/*background: green;*/
-	position: relative;
-	left: -50px;
+	position: relative; left: -50px;
 }
 
-header a{
+header #link{
 	color: white;
 	text-decoration: none; /*Remove the underline in the link*/
 	text-transform: uppercase;
 	font-size: 16px;
-	position: relative;
-	top: 70px;
+	position: relative; top: 70px;
 }
 
 header #mainLogo{
@@ -172,11 +150,10 @@ header .highlight, header .current a{
 	color:#edb42e;
 }
 
-header a:hover{
+header #link:hover{
 	color:#ffc300;
 	color:#2dd2c5;
 }
-
 
 /* The Main Div for the info to share */
 #divider{
@@ -184,56 +161,183 @@ header a:hover{
 	left:15.70%;
 	height: 100%;
 	width: 100%;
-	background: url("pics/seamless_paper_texture.png");
+	background: url("pics/seamless_paper_texture.png"); 
 	background-size: 100% 100%;
 	margin: auto;
 	text-align:center;
 	color:black;
 }
 
+#cost2{
+	padding-top: 50px;
+	font-size: 30px;
+}
 
+#cost{
+	float: left;
+	display: flex;
+	/*background: yellow;*/
+}
 
+#dividerPart{
+	margin: auto;
+	display: inline-block;
+	position: relative;
+	top: -50px;
+	width: 50%;
+	height: 80%;
+	/*background: white;*/
+}
 
+#dividerPart img{
+	border-radius: 4px;
+}
 
+#dividerPart2{
+	margin: auto;
+	display: inline-block;
+	position: relative;
+	top: 20px;
+	width: 50%;
+	height: 80%;
+	/*background: white;*/
+}
 
+#dividerPart2 li {
+    list-style-type: none;
+    width: 80%;
+}
 
+#dividerPart2 img{
+	border-radius: 4px;
+}
 
+/************************** Divider for a new page *******************************/
+#divider2{
+	background: url("pics/seamless_paper_texture.png");
+	background-size: 100% 100%;
+	width:75%;
+	margin: auto;
+	text-align:center;
+	color:black;
+}
 
+#divider2Part{
+	margin: auto;
+	display: inline-block;
+	width: 50%;
+	height: 80%;
+	/*background: white;*/
+}
 
-
-
+#divider2Part img{
+	border-radius: 4px;
+}
 
 
 
 
 /************************************ Newsletter ***************************************/
+#newsletterOutside{
+	margin:auto;
+	width: 45%;
+	height:20%;
+	position: relative;
+	top: -80px;
+	left: 0px;
+	background: #750404;
+	box-shadow: 0px 2px 35px black;
+}
+
 #newsletter{
-	padding:15px;
+	margin:auto;
+	display: flex;
+	width: 75%;
+	height:100%;
+	position: relative;
+	left: 0px;
 	color: white;
-	background-color: #530932;
+	background: #b72929;
+}
+
+#innerNews{
+	margin:auto;
+	float: left;
+	padding-top: 20px;
+	width:95%;
+	/*background: red;*/
+}
+
+#innerNews img{
+		position: relative;
+ 		top: 50%;
+  		transform: translateY(-25%);
 }
 
 #newsletter h1{
-	float: left;
+	margin: auto;
 }
 
 #newsletter form{
-	float:right;
-	margin-top:15px;
+	margin: auto;
+	position: relative;
+	left: 15px;
+	margin-right: 20px;
+	/*background: green;*/
 }
 
-#newsletter input[type= "email"]{
-	padding: 4px;
+#newsletter input[type="date"]{
+	float: left;
 	height:25px;
-	width:250px;
+	width:90%;
 }
+
+#newsletter input[type="submit"]{
+	float:left;
+	height: 29px;
+	width: 25px;
+	position: relative;
+	left: -13px;
+	background: #750404;
+	border: 0;
+	color: white;
+}
+
+#sticker1{
+	width: 95%;
+	position: relative;
+	top: -25px;
+}
+
+.newsDivider{
+	display: none;
+	height: 40%; width: 76%;
+	background: #750404;
+	margin: auto; padding-bottom: 8px;
+	text-align:center;
+}
+
+
+
+/********************************* Information Divs ************************************/
+
 
 
 /* The standard divs*/
 #standard{
-	background-image: url("pics/seamless_paper_texture.png"); 
+	background-image: url("pics/seamless_paper_texture.png");
+	display: flex;
+	justify-content: space-between;
 }
 
+#standard div{
+	width: 45%;
+	height: 125px;
+	display: inline-block;
+	background: green;
+	position: relative;
+	left: -50px;
+}
 
 /* Boxes */
 #boxes{
@@ -252,7 +356,6 @@ header a:hover{
 	height: 280px;
 	border-radius: 20px;
 }
-
 
 
 /* Footer */
@@ -275,15 +378,10 @@ footer{
 
 
 
-
-
-
-
-
 /************************************ Media Queries *************************************/
 @media(max-width: 1200px){
 	header nav{
-		/*background-color: orange;*/
+		background-color: orange;
 		padding: 0 2% 0 0;
 		text-align: center;
 	}
@@ -297,38 +395,46 @@ footer{
 		padding: 0 0 0 3px;
 		text-align: center;
 	}
-}
 
+	#newsletterOutside{
+		width:70%; height: 35%;
+	}
+
+	#innerNews{
+		padding-top: 3%;
+	}
+
+	#innerNews img{
+		position: relative;
+ 		top: 50%;
+  		transform: translateY(-10%);
+	}
+
+}
+/*******************************************************************************/
 @media(max-width: 768px){
 	header nav{
 		background-color: green;
 	}
-}
 
-/*@media(max-width: 768px){
-	header #branding, header nav, header nav li,
-	#newsletter h1, #newsletter form, #boxes .box,
-	article#main-col, aside#sidebar{
+	#cost{
 		float:none;
-		text-align: center;
+		display: block;
+		padding: 5px
 		width: 100%;
 	}
 
-	header{
-		padding-bottom: 20px;
+	#divider2Part{
+	display: block;
+	/*background: white;*/
+	width: 100%;
 	}
 
-	#showcase h1{
-		margin-top: 40px;
+	#newsletterOutside{
+		display: none;
 	}
 
-	#newsletter button{
-		display:block;
-		width:100%;
+	.newsDivider{
+		display: block;
 	}
-
-	#newsletter form input[type="email"]{
-		width:100%;
-		margin-bottom: 5px;
-	}*/
 }
